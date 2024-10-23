@@ -12,19 +12,10 @@
     <div class="container mt-5">
         <form onsubmit="addWord(event)" class="col-lg-6 offset-lg-3">
             <div class="row">
-                <input id="add-input" type="text" class="form-control" placeholder="Enter a word!" required>
+                <input id="word-input" type="text" class="form-control" placeholder="Enter a word" required>
                 <span class="input-group-btn">
-                    <button type="submit" class="btn btn-primary">Add to dictionary</button>
-                </span>
-            </div>
-        </form>
-
-    <!-- Search word form -->
-        <form onsubmit="searchWord(event)" class="col-lg-6 offset-lg-3">
-            <div class="row">
-                <input id="search-input" type="text" class="form-control" placeholder="Search-Word Bar" required>
-                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-primary">Search!</button>
+                    <button type="button" class="btn btn-primary" onclick="addWord()">Add to dictionary</button>
+                    <button type="button" class="btn btn-success" onclick="searchWord()">Search!</button>
                 </span>
             </div>
         </form>
